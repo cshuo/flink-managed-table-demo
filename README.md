@@ -1,4 +1,4 @@
-Build Image For Manged Table Demo
+Build Image For Flink Manged Table Demo
 
 ## Flink image
 1. Build the flink jar
