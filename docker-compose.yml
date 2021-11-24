@@ -2,7 +2,7 @@ version: '2.1'
 services:
   sql-client:
     user: flink:flink
-    image: sql-client:1.15
+    image: cshuo/sql-client:1.15.0
     depends_on:
       - jobmanager
       - mysql
@@ -13,7 +13,7 @@ services:
       - shared-tmpfs:/tmp/store
   jobmanager:
     user: flink:flink
-    image: flink:1.15
+    image: cshuo/flink:1.15.0
     ports:
       - "8081:8081"
     command: jobmanager
@@ -25,7 +25,7 @@ services:
       - shared-tmpfs:/tmp/store
   taskmanager:
     user: flink:flink
-    image: flink:1.15
+    image: cshuo/flink:1.15.0
     depends_on:
       - jobmanager
     command: taskmanager

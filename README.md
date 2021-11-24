@@ -4,7 +4,7 @@ Build Image For Flink Manged Table Demo
 1. Build the flink jar
 2. Copy jars in $FLINK/lib into ./flink-managed-table-demo/images/flink/lib/
 3. Copy jars in $FLINK/opt into ./flink-managed-table-demo/images/flink/opt/
-4. Copy connector/format jars into ./flink-managed-table-demo/images/flink/connector_jar/
+4. Copy connector/format and table-storage jars into ./flink-managed-table-demo/images/flink/connector_jar/
 5. Build Flink image: `docker build -t flink:$FLINK_VERSION`
 
 ## Sql Client image
